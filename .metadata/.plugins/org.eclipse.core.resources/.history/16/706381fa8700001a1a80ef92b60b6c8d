@@ -1,0 +1,45 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// Hello World! の出力
+		
+
+
+		int e=5;
+
+		if(e<10 && 3<e){
+			System.out.println("A");
+		}
+			else{
+				System.out.println("B");
+		}
+		
+		
+		String f="赤";
+		switch(f){
+		case "赤":
+			System.out.println("赤組です");
+			break;
+		case "白":
+			System.out.println("白組です");
+			break;
+		default:
+			System.out.println("その他");
+		}
+		
+		char[] eigo={'x','y','z'};
+				System.out.println(eigo[0]);
+				
+				
+				
+		String[][] country=
+		{
+			{"東京","埼玉"},
+			{"大阪","京都"},
+			{"福岡","熊本"}
+		};
+	  System.out.println(country[3][2]);
+	}
+}
+
