@@ -5,7 +5,7 @@ create database logindb_miyauchi;
 use logindb_miyauchi;
 
 create table user(
-id int;
+id int,
 user_name varchar(255),
 password varchar(255)
 );

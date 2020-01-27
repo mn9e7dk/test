@@ -13,7 +13,7 @@ public class LoginDAO {
 			DBConnector db =new DBConnector();
 			Connection con =db.getConnection();
 
-			String sql="select * from where user_name=? and password=?";
+			String sql="select * from user where user_name=? and password=?";
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1,name);
@@ -21,7 +21,7 @@ public class LoginDAO {
 		ResultSet rs=ps.executeQuery();
 
 		if(rs.next()) {
-			dto.setName(rs.getString("use_name"));
+			dto.setName(rs.getString("user_name"));
 			dto.setPassword(rs.getString("password"));
 		}
 		}catch (SQLException e) {
