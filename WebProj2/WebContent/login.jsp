@@ -5,12 +5,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>HelloStruts</title>
+<title>LOGIN</title>
 </head>
 <body>
-<h1>HelloStruts2!</h1>
-<br>
-<h3>MySQLと接続できます。</h3>
-
+<s:property value="username"/>さん、ようこそ!
 </body>
 </html>

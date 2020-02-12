@@ -11,7 +11,7 @@ public class LoginDAO {
 	public String username;
 	public String password;
 
-	public boolean select(String username,String password) {
+	public boolean select(String username, String password) {
 		boolean ret=false;
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
@@ -30,5 +30,11 @@ public class LoginDAO {
 		}catch (SQLException e) {
 			e.printStackTrace();
 		}
+		try {
+			con.close();
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return ret;
 	}
 }
